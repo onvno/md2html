@@ -8,8 +8,8 @@ prodName=(
 )
 docs="docs"
 
-# 创建out目录
-htmlDir="$cdir/out"
+# 创建src目录
+htmlDir="$cdir/src"
 if [ ! -d $htmlDir ]
   then
   mkdir $htmlDir
@@ -17,7 +17,7 @@ if [ ! -d $htmlDir ]
 fi
 for name in ${prodName[@]}
 do
-  # 创建out子目录
+  # 创建src子目录
   if [ ! -d "$htmlDir/$name" ]
     then
     mkdir "$htmlDir/$name"
@@ -40,7 +40,6 @@ do
         rm $htmlDir/$name/$prename.htmlg
       fi
     fi   
-
   done
 done
 
