@@ -12,13 +12,6 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
 done < "$basePath"
 echo $baseStr
 
-# num=1234
-# 以下可以删除替换内容，但是无法在脚本中输出
-# echo $baseStr | sed -e "s/<%Replace%>/1234/"
-# 需要使用以下方法替换输出
-# var="${baseStr/<%Replace%>/1234}"
-# echo $var
-
 src="src"
 if [ -d $src ] 
 	then
