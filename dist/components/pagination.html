@@ -5,7 +5,12 @@
  <meta charset="UTF-8">
  <title>Document</title>
  <!-- 引入head -->
- {{include '../../base/public/header'}}
+ <style>
+	* {
+		margin:0;
+		padding:0;
+	}
+</style>
 </head>
 <body>
  <!-- side bar -->
@@ -142,6 +147,6 @@ comp.update({totalPages: 100,pageSize:20,currentPage:1,totalCount:200});
  </div>
 
  <!-- 引入end -->
- {{include '../../base/public/footer'}}
+ <div>footer</div>
 </body>
 </html>

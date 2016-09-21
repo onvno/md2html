@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "art-template": "^3.0.3",
+    "fs-extra": "^0.30.0",
     "marked": "^0.3.6",
     "pygmentize-bundled": "^2.3.0"
   }

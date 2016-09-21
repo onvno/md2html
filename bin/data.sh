@@ -2,7 +2,7 @@
 
 echo `pwd`
 # 不能换行
-basePath="src/public/base.html"
+basePath="base/public/base.html"
 # baseStr=$(cat base.html)
 
 # 换行
