@@ -42,6 +42,7 @@ do
       fi
     fi   
   done
+  cd ../..
 done
 
 # 替换SUMMARY.md链接
