@@ -30,12 +30,13 @@ do
     suffix="${fullName##*.}"
     if [ "${suffix}"=="md" ]
     then
+      # 获取文件名，执行输出
+      # echo "$fullName"
       prename="${fullName%.*}"
-      echo "$fullName"
       marked "$fullName" -o "$htmlDir/$name/$prename.html"
       if [ "$prename" = "SUMMARY" ]
         then
-        echo "$htmlDir/$name/$prename.html"
+        # 替换md链接为html
         sed -ig "s/\w*.md/$1.html/" $htmlDir/$name/$prename.html
         rm $htmlDir/$name/$prename.htmlg
       fi

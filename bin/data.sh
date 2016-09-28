@@ -1,8 +1,9 @@
 #!/bin/sh
 
 echo `pwd`
-# 不能换行
+
 basePath="base/public/base.html"
+# $(cat base.html)不能换行,取消此方法
 # baseStr=$(cat base.html)
 
 # 换行
@@ -10,7 +11,7 @@ baseStr=""
 while IFS='' read -r line || [[ -n "$line" ]]; do
 	baseStr="$baseStr\n$line"
 done < "$basePath"
-echo $baseStr
+# echo $baseStr
 
 src="src"
 if [ -d $src ] 
@@ -21,7 +22,7 @@ if [ -d $src ]
 	do
 		if [ $dir != "public" ]
 			then
-			echo $dir
+
 			cd $dir
 
 			if [ -f "SUMMARY.html" ]
